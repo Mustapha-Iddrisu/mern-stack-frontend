@@ -23,7 +23,7 @@ export default function Update() {
   useEffect(() => {
     return () => {
       axios
-        .get("http://localhost:4002/api/get-user/" + id)
+        .get("https://mern-stack-backend-brown.vercel.app/get-user/" + id)
         .then((result) => {
           let { name, email, age, city, language } = result.data;
           setName(name);
@@ -44,7 +44,7 @@ export default function Update() {
     let confirm = window.confirm("Please click okay to confirm");
     if (confirm) {
       axios
-        .put("http://localhost:4002/api/update-user/" + id, data)
+        .put("http://mern-stack-backend-brown.vercel.app/update-user/" + id, data)
         .then((result) => {
           console.log(result)
           alert("success")
