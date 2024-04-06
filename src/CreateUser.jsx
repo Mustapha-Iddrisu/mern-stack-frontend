@@ -24,7 +24,7 @@ export default function CreateUser() {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post("https://mern-stack-backend-brown.vercel.app/add-User", data)
+      .post("https://mern-stack-backend-brown.vercel.app/add-user", data)
       .then((result) => {
         const Toast = Swal.mixin({
           toast: true,
