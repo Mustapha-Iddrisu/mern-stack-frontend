@@ -16,7 +16,7 @@ export default function AllUsers() {
   useEffect(() => {
     return () => {
       axios
-        .get("http://localhost:4002/api/all-Users")
+        .get("mern-stack-backend-brown.vercel.app/all-Users")
         .then((result) => {
           // console.log(result);
           setUsers(result.data.Users);
