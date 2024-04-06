@@ -16,7 +16,7 @@ export default function AllUsers() {
   useEffect(() => {
     return () => {
       axios
-        .get("mern-stack-backend-brown.vercel.app/all-Users")
+        .get("https://mern-stack-backend-brown.vercel.app/all-Users")
         .then((result) => {
           // console.log(result);
           setUsers(result.data.Users);
@@ -43,7 +43,7 @@ export default function AllUsers() {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete("http://localhost:4002/api//delete-user/" + id)
+          .delete("https://mern-stack-backend-brown.vercel.app/delete-user/" + id)
           .then(() => {
             Swal.fire({
               title: "Deleted!",
