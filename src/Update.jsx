@@ -23,7 +23,7 @@ export default function Update() {
   useEffect(() => {
     return () => {
       axios
-        .get("https://mern-stack-backend-brf4.onrender.com/get-user/" + id)
+        .get("https://mern-stack-backend-brf4.onrender.com/api/get-user/" + id)
         .then((result) => {
           let { name, email, age, city, language } = result.data;
           setName(name);
