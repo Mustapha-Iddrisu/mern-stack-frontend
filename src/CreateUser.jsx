@@ -24,7 +24,7 @@ export default function CreateUser() {
   const submit = (e) => {
     e.preventDefault();
     axios
-      .post("https://mern-stack-backend-brf4.onrender.com/add-user", data)
+      .post("https://mern-stack-backend-brf4.onrender.com/api/add-user", data)
       .then((result) => {
         const Toast = Swal.mixin({
           toast: true,
