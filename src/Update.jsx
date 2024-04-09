@@ -44,7 +44,7 @@ export default function Update() {
     let confirm = window.confirm("Please click okay to confirm");
     if (confirm) {
       axios
-        .put("https://mern-stack-backend-brf4.onrender.com/update-user/" + id, data)
+        .put("https://mern-stack-backend-brf4.onrender.com/api/update-user/" + id, data)
         .then((result) => {
           console.log(result)
           alert("success")
