@@ -18,7 +18,7 @@ export default function AllUsers() {
       axios
         .get("https://mern-stack-backend-brf4.onrender.com/all-users")
         .then((result) => {
-          // console.log(result);
+          console.log(result);
           setUsers(result.data.Users);
           setNumberOfUsers(result.data.count);
         })
