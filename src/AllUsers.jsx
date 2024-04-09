@@ -61,7 +61,7 @@ export default function AllUsers() {
   
   return (
     <div
-      className="d-flex  justify-content-center align-items-center p-4 vh-100 row"
+      className="d-flex  justify-content-center align-items-center p-4 row"
       id="mainbody"
     >
       <div className="bg-white d-flex  rounded col-auto p-3 row">
