@@ -16,7 +16,7 @@ export default function AllUsers() {
   useEffect(() => {
     return () => {
       axios
-        .get("https://mern-stack-backend-brf4.onrender.com/all-users")
+        .get("https://mern-stack-backend-brf4.onrender.com/api/all-users")
         .then((result) => {
           console.log(result);
           setUsers(result.data.Users);
@@ -43,7 +43,7 @@ export default function AllUsers() {
     }).then((result) => {
       if (result.isConfirmed) {
         axios
-          .delete("https://mern-stack-backend-brf4.onrender.com/delete-user/" + id)
+          .delete("https://mern-stack-backend-brf4.onrender.com/api/delete-user/" + id)
           .then(() => {
             Swal.fire({
               title: "Deleted!",
