@@ -61,7 +61,7 @@ export default function AllUsers() {
   
   return (
     <div
-      className="d-flex  justify-content-center align-items-center p-4 row"
+      className="d-flex  justify-content-center align-items-center vh-100 p-4 row"
       id="mainbody"
     >
       <div className="bg-white d-flex  rounded col-auto p-3 row">
@@ -124,7 +124,7 @@ export default function AllUsers() {
             </tbody>
           </table>
         ) : (
-          <div className="d-flex justify-content-center vh-100" id="mainbody">
+          <div className="d-flex justify-content-center">
             <h3>No users found</h3>
           </div>
         )}
