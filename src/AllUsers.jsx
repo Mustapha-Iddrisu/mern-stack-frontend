@@ -124,7 +124,7 @@ export default function AllUsers() {
             </tbody>
           </table>
         ) : (
-          <div className="d-flex justify-content-center">
+          <div className="d-flex justify-content-center vh-100" id="mainbody">
             <h3>No users found</h3>
           </div>
         )}
